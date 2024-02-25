@@ -13,6 +13,5 @@ namespace Hepsi.Api.Application.Interfaces.Repositories
         Task AddRangeAsync(IList<T> entities);
         Task<T> UpdateAsync(T entity);
         Task HardDeleleteAsync(T entity);
-
     }
 }

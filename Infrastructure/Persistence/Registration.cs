@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Context;
 using Persistence.Repositories;
+using Hepsi.Api.Application.Interfaces.UnitOfWorks;
+using Persistence.UnitOfWorks;
 
 namespace Persistence
 {
@@ -16,7 +18,7 @@ namespace Persistence
 
             services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
             services.AddScoped(typeof(IWriteRepository<>), typeof(WriteRepository<>));
-
+            services.AddScoped<IUnitOfWork,UnitOfWork >();
         }
     }
 }
