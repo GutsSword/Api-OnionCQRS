@@ -27,7 +27,6 @@ namespace Hepsi.Api.Application.Features.Products.Queries.GetAllProducts
         {
             var products = await unitOfWork.GetReadRepository<Product>().GetAllAsync(include: x=>x.Include(x=>x.Brand));
             var brand = mapper.Map<BrandDto,Brand>(new Brand());
-
             var map = mapper.Map<GetAllProductsQueryResponse, Product>(products);
 
             foreach (var item in map)
