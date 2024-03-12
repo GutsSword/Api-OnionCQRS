@@ -31,9 +31,15 @@ namespace Persistence.Repositories
             return entity;
         }
 
-        public async Task HardDeleleteAsync(T entity)
+        public async Task HardDeleteAsync(T entity)
         {
             await Task.Run(() => Table.Remove(entity));
         }
+
+        public async Task HardDeleteRangeAsync(IList<T> entity)
+        {
+            await Task.Run(() => Table.RemoveRange(entity));
+        }
+
     }
 }
