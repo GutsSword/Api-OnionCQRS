@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Hepsi.Api.Application.Exceptions;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace Hepsi.Api.Application
         public static void AddApplication(this IServiceCollection services)
         {
             var assembly = Assembly.GetExecutingAssembly();
+            services.AddTransient<ExceptionMiddleWare>();
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
         }
     }
