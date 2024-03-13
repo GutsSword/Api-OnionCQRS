@@ -2,6 +2,7 @@ using Persistence;
 using Hepsi.Api.Application;
 using Hepsi.Mapper;
 using Hepsi.Api.Application.Exceptions;
+using Hepsi.Api.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,7 @@ builder.Configuration
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddApplication();
 builder.Services.AddCustomMapper();
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
