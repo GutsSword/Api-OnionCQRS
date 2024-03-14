@@ -15,7 +15,7 @@ namespace Hepsi.Api.Application.Interfaces.Tokens
 
         string GenerateRefreshToken();
 
-        ClaimsPrincipal? GetPrincipalFromExpiredToken();
+        ClaimsPrincipal? GetPrincipalFromExpiredToken(string? token);
         
     }
 }
