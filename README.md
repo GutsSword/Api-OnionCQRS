@@ -1,1 +1,1 @@
-# HepsiApiSln
+There is basic Api project. 
