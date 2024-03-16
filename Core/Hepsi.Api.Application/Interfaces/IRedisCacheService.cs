@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Hepsi.Api.Application.Interfaces
 {
-    private readonly ConnectionMultiplexer
     public interface IRedisCacheService
     {
         Task<T> GetAsync<T>(string key);
