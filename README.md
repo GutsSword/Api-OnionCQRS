@@ -1,8 +1,3 @@
-<h1>Proje Özeti</h1>
-<hr>
-<p>Bu proje, <b>Asp.Net Core 7.0</b> kullanılarak oluşturulmuştur.</p>
-<br>
-
 <h1>Özellikler</h1>
 <hr>
 <ul type="disc">
