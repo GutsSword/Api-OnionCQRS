@@ -20,7 +20,9 @@ namespace Hepsi.Api.Application
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
             services.AddValidatorsFromAssembly(assembly);
             ValidatorOptions.Global.LanguageManager.Culture = new System.Globalization.CultureInfo("tr");
+
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(FluentValidationBehaviour<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RedisCacheBehaviour<,>));
         }
 
         private static IServiceCollection AddRulesFromAssemblyByContaining(
