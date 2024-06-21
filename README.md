@@ -1,5 +1,4 @@
 <h1>Özellikler</h1>
-<hr>
 <ul type="disc">
     <li><b>AutoMapper:</b> Nesneler arası dönüştürme işlemlerini kolaylaştırmak için AutoMapper kütüphanesi kullanıldı.</li>
     <li><b>Onion Mimarisi:</b> Proje, katmanlı mimari prensiplerine uygun olarak tasarlanmış, esnek ve sürdürülebilir bir yapı sunan Onion Mimarisi ile geliştirildi.</li>
@@ -8,9 +7,8 @@
     <li><b>JWT Token ve Identity:</b> Güvenli kimlik doğrulama ve yetkilendirme işlemleri için JWT Token ve Identity yapısı kullanıldı.</li>
 </ul>
 <br>
-
-<h1>Kullanılan Teknolojiler</h1>
 <hr>
+<h1>Kullanılan Teknolojiler</h1>
 <ul type="disc">
     <li>Asp.Net Core 7.0</li>
     <li>AutoMapper</li>
