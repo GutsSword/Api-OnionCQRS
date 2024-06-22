@@ -16,5 +16,5 @@
     <li>CQRS ve MediatR</li>
     <li>Redis</li>
     <li>JWT Token</li>
-    <li>Identity</li>
+    <li>Microsoft Identity </li>
 </ul>
